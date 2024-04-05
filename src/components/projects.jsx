@@ -22,7 +22,7 @@ export default function Projects() {
 }
 
 const Project = ({ title, description }) => {
-  const href = `/${title}`
+  const href = `/${title.toLowerCase()}`
   const src = `/images/${title.toLowerCase()}.png`
   const UPPERCASED_TITLE = title.charAt(0).toUpperCase() + title.slice(1)
   return (
